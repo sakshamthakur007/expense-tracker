@@ -1,0 +1,98 @@
+/* App.css */
+
+body {
+  font-family: 'Arial', sans-serif;
+  background: #f4f4f4;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  background: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+  padding: 20px;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+h2 {
+  color: #333333;
+  margin-bottom: 20px;
+  font-size: 24px;
+}
+
+input[type="text"], input[type="number"] {
+  width: calc(50% - 10px);
+  padding: 10px;
+  margin: 5px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+input[type="text"]:focus, input[type="number"]:focus {
+  border-color: #888888;
+  outline: none;
+}
+
+.add-expense {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  background-color: #4caf50;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.add-expense:hover {
+  background-color: #45a049;
+}
+
+.expenses-list {
+  list-style-type: none;
+  padding: 0;
+  margin-top: 20px;
+}
+
+.expenses-list li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #f9f9f9;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.expenses-list li span {
+  font-size: 16px;
+  color: #555555;
+}
+
+.delete {
+  background-color: #ff6b6b;
+  color: #ffffff;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.delete:hover {
+  background-color: #ff5252;
+}
